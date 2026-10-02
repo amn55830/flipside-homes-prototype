@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flipside Homes | Cleaner Stays. Brighter Days.</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f7f5;color:#173f32}
+header{background:#fff;border-bottom:1px solid #dfe7e2;position:sticky;top:0;z-index:10}
+.nav{max-width:1050px;margin:auto;padding:15px 22px;display:flex;justify-content:space-between;align-items:center}
+.brand{font-weight:800;font-size:22px;letter-spacing:.7px;color:#174d3c}.brand span{font-weight:400}.tag{font-size:8px;letter-spacing:2px;color:#6e9b83;margin-top:4px}
+button{background:#174d3c;color:#fff;border:0;border-radius:9px;padding:12px 18px;font-weight:700;cursor:pointer}
+.hero,.section{max-width:1050px;margin:28px auto;padding:0 22px}.hero-box{background:#174d3c;color:#fff;border-radius:20px;padding:42px 34px;display:grid;grid-template-columns:1.3fr .7fr;gap:25px;align-items:center}
+.hero h1{font-size:44px;margin:0 0 12px;line-height:1.05}.hero p{font-size:18px;line-height:1.55;margin:0 0 22px}
+.price{background:#fff;color:#174d3c;border-radius:14px;padding:22px;text-align:center}.price strong{font-size:36px;display:block}
+h2{font-size:28px;margin-bottom:8px}.sub{color:#5e6e66}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card,.step{background:#fff;border:1px solid #dfe7e2;border-radius:16px;padding:22px;box-shadow:0 4px 14px rgba(20,50,40,.06)}
+.card p,.step p{color:#596a62;line-height:1.5}.photo{height:185px;border-radius:12px;overflow:hidden;background:#dce8e1;position:relative;margin-bottom:16px}
+.room{height:100%;background:linear-gradient(#eef3f0 0 62%,#c5d4ca 62% 100%)}.window{position:absolute;left:18%;top:14%;width:27%;height:42%;background:#c9ddd5;border:7px solid #fff}.window:after{content:"";position:absolute;left:50%;top:0;bottom:0;border-left:2px solid #fff}
+.sofa{position:absolute;left:12%;bottom:16%;width:48%;height:27%;background:#7e9d8d;border-radius:12px 12px 5px 5px}.sofa:before{content:"";position:absolute;left:4%;right:4%;top:-18%;height:30%;background:#91ad9e;border-radius:12px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.num{width:34px;height:34px;border-radius:50%;background:#174d3c;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800}
+footer{background:#173f32;color:#fff;text-align:center;padding:30px;margin-top:45px}.notice{background:#eef5f1;border-radius:10px;padding:12px;margin:15px 0;color:#285443;font-size:13px}
+.modal-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:20;align-items:center;justify-content:center;padding:20px}.modal{background:#fff;border-radius:18px;max-width:500px;width:100%;padding:28px}
+label{display:block;font-weight:700;margin:12px 0 6px}input,select{width:100%;padding:12px;border:1px solid #cfdad4;border-radius:8px;font-size:15px}.close{background:#e8eeeb;color:#173f32;margin-left:8px}
+@media(max-width:750px){.hero-box,.grid,.steps{grid-template-columns:1fr}.hero h1{font-size:35px}}
+</style>
+</head>
+<body>
+<header><div class="nav"><div><div class="brand">FLIPSIDE <span>HOMES</span></div><div class="tag">CLEANER STAYS. BRIGHTER DAYS.</div></div><button onclick="openModal()">Reserve Your Spot</button></div></header>
+<section class="hero"><div class="hero-box"><div><h1>A better short-term rental experience.</h1><p>Clean. Reliable. Worry-free. Flipside Homes provides short-term stays with a documented cleaning and inspection process so you know what to expect before you arrive.</p><button onclick="document.getElementById('property').scrollIntoView({behavior:'smooth'})">View the Property</button></div><div class="price"><strong>$149</strong>per night<br><small>2-night minimum · Up to 4 guests · No separate cleaning fee</small></div></div></section>
+<section class="section" id="property"><h2>Find & Book</h2><p class="sub">The Warrensburg Retreat · Warrensburg, Missouri</p><div class="grid">
+<div class="card"><div class="photo"><div class="room"><div class="window"></div><div class="sofa"></div></div></div><h3>The Warrensburg Retreat</h3><p>Comfortable short-term stay designed around cleanliness, convenience, and reliable support.</p><p><b>3 beds · Up to 4 guests · Wi-Fi · Pet friendly</b></p><button onclick="openModal()">Reserve / Test Booking</button></div>
+<div class="card"><h3>What's Included</h3><p>✓ Professional property photos<br>✓ Clear pricing<br>✓ Available dates<br>✓ Amenities information<br>✓ House rules<br>✓ Check-in instructions</p></div>
+<div class="card"><h3>Transparent Pricing</h3><p><b>$149/night</b><br>2-night minimum<br>No separate cleaning fee<br>Taxes added when applicable</p></div>
+</div></section>
+<section class="section"><h2>Quality You Can Trust</h2><p class="sub">Every property is checked before a guest arrives.</p><div class="grid">
+<div class="card">✓ Bathrooms are clean</div><div class="card">✓ Kitchen is clean</div><div class="card">✓ Bedrooms are prepared</div><div class="card">✓ Appliances are working</div><div class="card">✓ Amenities are available</div><div class="card">✓ Property matches the listing</div>
+</div></section>
+<section class="section"><h2>How It Works</h2><div class="steps"><div class="step"><div class="num">1</div><h3>Book</h3><p>Choose your dates, review the property information, and request your stay.</p></div><div class="step"><div class="num">2</div><h3>Inspect</h3><p>Flipside Homes completes its cleaning and quality-control checklist before arrival.</p></div><div class="step"><div class="num">3</div><h3>Stay & Support</h3><p>Receive simple check-in instructions and contact support if something comes up.</p></div></div></section>
+<section class="section"><div class="card"><h2>Help us test Flipside Homes</h2><p>Interested in trying the concept? Submit your information to test the reservation experience.</p><button onclick="openModal()">Test the $25 Reservation</button></div></section>
+<footer><b>FLIPSIDE HOMES</b><br><small>CLEANER STAYS. BRIGHTER DAYS.<br>Prototype for customer testing · Not a live booking system</small></footer>
+<div class="modal-bg" id="modal"><div class="modal"><h2>Test a Reservation</h2><p>Complete this short form as if you were considering a real stay.</p><label>Name</label><input id="name" placeholder="Your name"><label>Email</label><input id="email" type="email" placeholder="you@example.com"><label>What are you looking for?</label><select><option>Weekend stay</option><option>Family visit</option><option>Work/business trip</option><option>Event or school visit</option></select><div class="notice">Prototype only: no money will be charged. The $25 refundable deposit is a future validation step.</div><button onclick="submitTest()">Submit Test Reservation</button><button class="close" onclick="closeModal()">Close</button></div></div>
+<script>
+function openModal(){document.getElementById('modal').style.display='flex'}
+function closeModal(){document.getElementById('modal').style.display='none'}
+function submitTest(){if(!document.getElementById('name').value.trim()||!document.getElementById('email').value.trim()){alert('Please enter your name and email.');return}document.querySelector('.modal').innerHTML='<h2>Thank you!</h2><p>Your prototype reservation test has been submitted.</p><div class="notice">In a live version, this would continue to the refundable deposit and confirmation process.</div><button onclick="closeModal()">Done</button>'}
+</script>
+</body>
+</html>
